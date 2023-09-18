@@ -78,8 +78,7 @@ jobs:
     # 2.1 (Optional) Login to ACR EE
     - uses: actions/checkout@v3
     - name: Login to ACR EE with the AccessKey pair
-      uses: aliyun/acr-login@v1
-      with:uujkkru 
+      uses: aliyun/acr-login@
         login-server: "https://${{ env.ACR_EE_REGISTRY }}"
         region-id: "${{ env.REGION_ID }}"
         access-key-id: "${{ secrets.ACCESS_KEY_ID }}"
